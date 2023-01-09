@@ -6,12 +6,19 @@
 import * as express from 'express';
 import * as path from 'path';
 
+// data set
+import { links } from './data/links';
+
 const app = express();
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to ixtlan-api!' });
+app.get('/links', (req, res) => {
+  res.send(links);
+});
+
+app.get('/', (req, res) => {
+  res.send({ message: 'all good!' });
 });
 
 const port = process.env.port || 3333;

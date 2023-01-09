@@ -8,7 +8,7 @@ export interface Link {
   type: string;
 }
 
-export const link: Link[] = [
+export const links: Link[] = [
   {
     id: '1',
     title: 'bandcamp',
