@@ -1,12 +1,4 @@
-export interface Link {
-  id: string;
-  title: string;
-  value: string;
-  visible: boolean;
-  dateCreated: string;
-  lastUpdate: null;
-  type: string;
-}
+import type { Link } from '@ixtlan-nx/shared-types';
 
 export const links: Link[] = [
   {
